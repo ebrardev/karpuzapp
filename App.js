@@ -1,20 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// In App.js in a new project
 
-export default function App() {
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import  HomeScreen  from './src/Screens/HomeScreen.js';
+import MarketScreen from './src/Screens/MarketScreen.js';
+import StandScreen from './src/Screens/StandScreen.js';
+import SplashScreen from './src/Screens/SplashScreen.js';
+
+
+const Stack = createNativeStackNavigator();
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator  initialRouteName="Splash">
+      
+        <Stack.Screen  
+         options={{
+          title: 'Home',
+          headerShown: false
+        }}
+        name="Home" component={HomeScreen} />
+        <Stack.Screen 
+         options={{
+         
+          headerShown: false
+        }}
+        headerShown="false" name="Market" component={MarketScreen} />
+        <Stack.Screen   headerShown="false"name="Stand" component={StandScreen} />
+        <Stack.Screen  headerShown="false" name="Splash" component={SplashScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
