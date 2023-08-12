@@ -4,7 +4,7 @@ import React from 'react'
 export default function HappyScreen() {
   return (
     <View>
-      <Text>HappyScreen</Text>
+      <Text>Tebrikler, En güzel karpuzu seçtiniz !</Text>
     </View>
   )
 }
