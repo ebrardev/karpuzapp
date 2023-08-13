@@ -10,4 +10,4 @@
 <img src="https://cdn.discordapp.com/attachments/860256092541157380/1140242230204973108/Ekran_Resmi_2023-08-13_14.14.44.png" width="300" height="400">
 
 <img src="https://cdn.discordapp.com/attachments/860256092541157380/1140242255769251840/Ekran_Resmi_2023-08-13_14.14.51.png" width="300" height="400">
-![
+
