@@ -11,6 +11,7 @@ export default function MarketScreen() {
     <SafeAreaView style={styles.container}>
 
 
+
       <Image style={styles.image} source={require('../../assets/market.png')}  />
   
         <Text style={styles.frame}> Karpuz alacağımız markete gidiyoruz </Text>
@@ -30,8 +31,9 @@ export default function MarketScreen() {
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    
-    alignItems:'center'
+    paddingHorizontal:20,
+    alignItems:'center',
+    gap:10,
 },
 image:{
   marginTop:100,

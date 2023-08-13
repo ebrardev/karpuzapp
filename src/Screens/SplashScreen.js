@@ -10,7 +10,8 @@ export default function SplashScreen({navigation}) {
   return (
     <View style={styles.container}>
         <Image style={styles.image} source={require('../../assets/watermelon.png')} />
-      <Text style={styles.text}>Karpuz seçme uygulamasına hoşgeldiniz.</Text>
+      <Text style={styles.text}>KARPUZAPP</Text>
+      <Text style={styles.small}>ebrardev</Text>
     </View>
   )
 }
@@ -20,7 +21,8 @@ const styles = StyleSheet.create({
         flex:1,
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'green'
+        backgroundColor:'green',
+        paddingHorizontal:20,
     },
     image:{
         width:200,
@@ -31,7 +33,14 @@ const styles = StyleSheet.create({
     text:{
         color:'white',
         fontWeight:'bold',
-        fontSize:16,
-        textAlign:'center'
+        fontSize:18,
+        textAlign:'center',
+        marginTop:15,
+    },
+    small:{
+        color:'white',
+        fontSize:12,
+        textAlign:'center',
+        marginTop:15,
     }
 })

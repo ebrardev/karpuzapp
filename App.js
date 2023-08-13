@@ -33,12 +33,39 @@ function App() {
           headerShown: false
         }}
         headerShown="false" name="Market" component={MarketScreen} />
-        <Stack.Screen   headerShown="false"name="Stand" component={StandScreen} />
-        <Stack.Screen  headerShown="false" name="Splash" component={SplashScreen} />
-        <Stack.Screen  headerShown="false" name="ChooseColorScreen" component={ChooseColorScreen} />
-        <Stack.Screen  headerShown="false" name="SunScreen" component={SunScreen} />
-        <Stack.Screen  headerShown="false" name="SlapScreen" component={SlapScreen} />
-        <Stack.Screen  headerShown="false" name="HappyScreen" component={HappyScreen} />
+        <Stack.Screen   
+           options={{
+          headerShown: false
+          }}
+     name="Stand" component={StandScreen} />
+        <Stack.Screen 
+           options={{
+         
+            headerShown: false
+          }}
+        headerShown="false" name="Splash" component={SplashScreen} />
+        <Stack.Screen 
+           options={{
+         
+            headerShown: false
+          }} headerShown="false" name="ChooseColorScreen" component={ChooseColorScreen} />
+        <Stack.Screen 
+           options={{
+         
+            headerShown: false
+          }}  name="SunScreen" component={SunScreen} />
+        <Stack.Screen 
+           options={{
+         
+            headerShown: false
+          }}
+           headerShown="false" name="SlapScreen" component={SlapScreen} />
+        <Stack.Screen  
+           options={{
+         
+            headerShown: false
+          }}
+        name="HappyScreen" component={HappyScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
